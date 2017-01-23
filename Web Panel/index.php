@@ -1,3 +1,11 @@
+<html>
+
+<head>
+	<?php include './res/templates/head.php';?>
+</head>
+
+<body>
+
 <?php
     include_once './res/websend/Websend.php';
 
@@ -10,3 +18,6 @@
     $ws->doCommandAsConsole("time set 6000");
     $ws->disconnect();
 ?>
+
+</body>
+</html>
