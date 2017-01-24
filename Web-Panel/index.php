@@ -12,18 +12,22 @@
 	$fp = @fsockopen($serverip, $serverport, $errno, $errstr, 3);
 	
 	if (!$fp) {
-		echo 'Down';
+		echo 'Down<br>';
 	}
 	else {
-		echo 'Up';
+		echo 'Up<br>';
 		fclose($fp);
 	}
 ?>
 
 <?php
 
-	if ($online == 1) {
-
+	$websendstatus = @fsockopen($configs->websend_ip, $configs->websend_port, $errno, $errstr, 3);
+	
+	if (!$websendstatus) {
+		echo 'Websend is offline';
+	}
+	else {
 		include_once './res/websend/Websend.php';
 	
 		//Replace with bukkit server IP. To use a different port, change the constructor to: $ws = new Websend("ip", port);
@@ -34,31 +38,22 @@
 	
 		$ws->doCommandAsConsole("say this is just a test guys");
 		$ws->disconnect();
-	
-	}
-	else {
-		echo '<p><strong>Server is offline</strong></p>';
 	}
 ?>
 
 <?php
-	if ($online == 1) {
-		echo '
-			<div id="log">';
+	echo '
+		<div id="log">';
+		
+			$ftpdata = file_get_contents('ftp://'. $configs->ftp_username .':'. $configs->ftp_password .'@'. $configs->ftp_ip . $configs->ftp_latestloglocation);
 			
-				$ftpdata = file_get_contents('ftp://'. $configs->ftp_username .':'. $configs->ftp_password .'@'. $configs->ftp_ip . $configs->ftp_latestloglocation);
-				
-				echo '<div>
+			echo '<div>
 					<pre>';
 						echo $ftpdata;
 						echo '
 					</pre>
 				</div>
-			</div>';
-	}
-	else {
-		echo '<p><strong>Server is offline</strong></p>';
-	}
+		</div>';
 ?>
 
 <!-- Load Footer -->
