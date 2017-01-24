@@ -41,7 +41,7 @@
 	}
 ?>
 
-<?php
+<?php //PUT THIS!!!! $websendstatus = @fsockopen($configs->websend_ip, $configs->websend_port, $errno, $errstr, 3);
 	echo '
 		<div id="log">';
 		
