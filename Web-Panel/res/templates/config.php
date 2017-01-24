@@ -24,6 +24,19 @@ return (object) array(
 	'ftp_username' => 'MyFTPUsername',
 	'ftp_password' => 'MyFTPPassword',
 	'ftp_ip' => '74.199.12.219',
+	'ftp_latestloglocation' => '/logs/latest.log',
+	
+	'servernames' => array(
+        "Mine",
+    ),
+	
+	'serverips' => array(
+        "74.199.12.219",
+    ),
+	
+	'serverports' => array(
+        "25566",
+    ),
 );
 
 ?>

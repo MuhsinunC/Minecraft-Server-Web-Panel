@@ -17,7 +17,7 @@
 <!-- Load Custom CSS -->
 	<link rel="stylesheet" href="./res/css/custom.css">
 <!-- Load Config.php File -->
-	<?php $configs = include('config.php');?>
+	<?php $configs = include('./res/templates/config.php');?>
 
 <!-- Load Nav Bar -->
 
