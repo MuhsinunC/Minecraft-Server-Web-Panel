@@ -1,7 +1,7 @@
 <?php
 //variables
 /*********************************** Variables ***********************************/
-/**/  $checkpass = "PutYourPasswordHere";
+/**/  $checkpass = "testpassword";
 /**/  $hashAlgorithm = "sha512";
 /*********************************************************************************/
 $receivedHash = $_POST['authKey'];
