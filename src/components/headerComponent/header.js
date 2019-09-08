@@ -123,7 +123,7 @@ export default function PersistentDrawerLeft() {
           <Typography variant="h6" noWrap>
             Minecraft Web Panel
           </Typography>
-          {auth && <MenuButton iconType={AccountCircle} items={['Account','Logout']}/>}
+          {auth && <MenuButton iconType={AccountCircle} items={[{ name: 'Account', path: '/Account' },{ name: 'Logout', path: '/Logout' }]}/>}
         </Toolbar>
       </AppBar>
       <Drawer
