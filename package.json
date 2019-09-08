@@ -1,0 +1,23 @@
+{
+  "name": "minecraft-server-web-panel",
+  "version": "1.0.0",
+  "description": "An online web panel that allows the use of extremely useful things on your Minecraft server such as server status, infractions, web console, etc",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run && node src/index.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhsinunCool/Minecraft-Server-Web-Panel.git"
+  },
+  "author": "Muhsinun Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhsinunCool/Minecraft-Server-Web-Panel/issues"
+  },
+  "homepage": "https://github.com/MuhsinunCool/Minecraft-Server-Web-Panel#readme",
+  "dependencies": {
+    "rcon-client": "^4.0.4"
+  }
+}
