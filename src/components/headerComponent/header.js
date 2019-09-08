@@ -16,14 +16,14 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+//import MailIcon from '@material-ui/icons/Mail';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 //import Switch from '@material-ui/core/Switch';
 //import FormControlLabel from '@material-ui/core/FormControlLabel';
 //import FormGroup from '@material-ui/core/FormGroup';
 //import MenuItem from '@material-ui/core/MenuItem';
 //import Menu from '@material-ui/core/Menu';
-import MenuButton from './menuButton';
+import MenuButton from '../helpers/menuButton';
 
 const drawerWidth = 240;
 
@@ -142,19 +142,19 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {['Home', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+          {[{ name: 'Home', path: '/Home', icon: <InboxIcon /> },{ name: 'About', path: '/About', icon: <InboxIcon /> }].map((text) => (
+            <ListItem button key={text.name}>
+              <ListItemIcon>{text.icon}</ListItemIcon>
+              <ListItemText primary={text.name} />
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+          {[{ name: 'Server 1', path: '/Server-1', icon: <InboxIcon /> },{ name: 'Server 2', path: '/Server-2', icon: <InboxIcon /> }].map((text) => (
+            <ListItem button key={text.name}>
+              <ListItemIcon>{text.icon}</ListItemIcon>
+              <ListItemText primary={text.name} />
             </ListItem>
           ))}
         </List>
