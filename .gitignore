@@ -1,5 +1,3 @@
-# Copied from https://github.com/YACHTPARTY/yachtbot/blob/develop/.gitignore
-
 # Logs
 logs
 *.log
@@ -70,7 +68,7 @@ typings/
 package-lock.json
 
 # Ignore the sekrits
-config.js
+#config.js
 
 #Ignore .DS_Store
  **/.DS_Store
