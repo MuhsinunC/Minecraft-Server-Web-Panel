@@ -1,9 +1,9 @@
 <?php
 
-//Config File: Edit to your liking! :D
+//Config File: Edit to your liking!
 return (object) array(
 	
-    'title' => 'InfiniD Ware',
+    'title' => 'Minecraft Server',
     'title_link' => './',
 	
 	'navbarlinks' => array(
@@ -16,14 +16,14 @@ return (object) array(
         "#"
     ),
 	
-	'websend_ip' => '74.199.12.219',
+	'websend_ip' => '127.0.0.1',
 	'websend_port' => '4446',
 	'websend_password' => 'testpassword', //You still have to manually enter ur password
 										  //in /res/websend/Websend.php on line 10; this
 										  //is only for the other normal pages like index.php
 	'ftp_username' => 'MyFTPUsername',
 	'ftp_password' => 'MyFTPPassword',
-	'ftp_ip' => '74.199.12.219',
+	'ftp_ip' => '127.0.0.1',
 	'ftp_latestloglocation' => '/logs/latest.log',
 	
 	'servernames' => array(
@@ -31,7 +31,7 @@ return (object) array(
     ),
 	
 	'serverips' => array(
-        "74.199.12.219",
+        "127.0.0.1",
     ),
 	
 	'serverports' => array(
