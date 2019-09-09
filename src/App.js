@@ -3,7 +3,6 @@ import React from 'react';
 
 // components
 import Header from './components/headerComponent/header';
-//import Button from '@material-ui/core/Button';
 
 // includes
 import './Assets/css/default.min.css';
