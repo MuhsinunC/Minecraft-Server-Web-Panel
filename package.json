@@ -13,6 +13,7 @@
   "homepage": "https://github.com/MuhsinunCool/Minecraft-Server-Web-Panel#readme",
   "private": true,
   "dependencies": {
+    "modern-rcon": "^1.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-md": "^1.12.3",

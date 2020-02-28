@@ -9,14 +9,14 @@ class Homepage extends Component {
           <Grid>
             <Cell size={12}>
               <h1>
-                Home Page Content Here
+                Home
               </h1>
             </Cell>
           </Grid>
           <Grid>
             <Cell size={12}>
               <p>
-                Hello there these are words. Blah.
+                This is the home page.
               </p>
             </Cell>
           </Grid>

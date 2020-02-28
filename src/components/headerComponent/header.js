@@ -7,13 +7,15 @@ import {
 import { NavigationDrawer } from 'react-md';
 import FontIcon from 'react-md/lib/FontIcons';
 
+// components
 import Homepage from '../pages/homePage';
 import About from '../pages/about';
+import Server1 from '../pages/server_1';
 import Footer from '../footerComponent/footer';
 
 function isActive(to, path) {
-  //return to === path;
-  return true;
+  return to === path;
+  //return true;
 }
 
 const inboxListItems = [{
@@ -32,16 +34,10 @@ const inboxListItems = [{
   divider: true,
 }, {
   component: Link,
-  to: '/page-2',
-  active: isActive('/page-2', 'pathname'),
-  primaryText: 'Page 2',
+  to: '/server_1',
+  active: isActive('/server_1', 'pathname'),
+  primaryText: 'Server 1',
   leftIcon: <FontIcon>donut_large</FontIcon>,
-}, {
-  component: Link,
-  to: '/page-3',
-  active: isActive('/page-3', 'pathname'),
-  primaryText: 'Page 3',
-  leftIcon: <FontIcon>flight_land</FontIcon>,
 }];
 
 class Header extends Component {
@@ -60,6 +56,7 @@ class Header extends Component {
             >
               <Route exact path='/' component={Homepage} />
               <Route exact path='/About' component={About} />
+              <Route exact path='/server_1' component={Server1} />
               <Footer />
             </NavigationDrawer>
           </div>

@@ -2,14 +2,26 @@ import React, { Component } from 'react';
 //import ReactDOM from 'react-dom';
 import { Grid, Cell } from 'react-md';
 
-class About extends Component {
+//const Rcon = require('modern-rcon');
+// 
+//const rcon = new Rcon('localhost', 25575, 'testpassword')
+// 
+//rcon.connect().then(() => {
+//  return rcon.send('help'); // Command sent to server
+//}).then(res => {
+//  console.log(res);
+//}).then(() => {
+//  return rcon.disconnect();
+//});
+
+class Server1 extends Component {
   render() {
     return (
       <div>
           <Grid>
             <Cell size={12}>
               <h1>
-                About
+                Server 1
               </h1>
             </Cell>
           </Grid>
@@ -25,4 +37,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Server1;
